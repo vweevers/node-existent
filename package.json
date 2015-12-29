@@ -1,0 +1,41 @@
+{
+  "name": "existent",
+  "version": "1.0.0",
+  "description": "Check if one or more paths exist, promise-less",
+  "license": "MIT",
+  "author": {
+    "name": "Vincent Weevers",
+    "email": "mail@vincentweevers.nl"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node test/build.js",
+    "build": "babel test/index.js -o test/build.js && babel src.js -o index.js",
+    "prepublish": "npm run build && npm test"
+  },
+  "dependencies": {
+    "after": "~0.8.1"
+  },
+  "devDependencies": {
+    "tape": "~4.4.0",
+    "unixify": "~0.2.1"
+  },
+  "keywords": [
+    "access",
+    "exist",
+    "exists",
+    "file",
+    "fs",
+    "path"
+  ],
+  "engines": {
+    "node": ">=0.10.0",
+    "npm": ">=2.0.0"
+  },
+  "repository": "vweevers/node-existent",
+  "bugs": "https://github.com/vweevers/node-existent/issues",
+  "homepage": "https://github.com/vweevers/node-existent"
+}
