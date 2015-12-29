@@ -12,14 +12,15 @@
     "index.js"
   ],
   "scripts": {
-    "test": "node test/build.js",
-    "build": "babel test/index.js -o test/build.js && babel src.js -o index.js",
-    "prepublish": "npm run build && npm test"
+    "test": "babel-node test",
+    "build": "babel src.js -o index.js",
+    "prepublish": "npm test && npm run build"
   },
   "dependencies": {
     "after": "~0.8.1"
   },
   "devDependencies": {
+    "babel": "~5.8.34",
     "tape": "~4.4.0",
     "unixify": "~0.2.1"
   },

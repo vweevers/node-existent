@@ -14,6 +14,5 @@ results
 npm-debug.log
 node_modules
 index.js
-test/build.js
 
 .yo-rc.json
